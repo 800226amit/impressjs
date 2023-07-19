@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Root Cause Analysis</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" href="../image/rca.png">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+    <link href="..\..\css\impress-common.css" rel="stylesheet" />
+    <style type="text/css" media="screen">
+
+
+#overview {
+    background: none;
+    border: none;
+    box-shadow: none;
+    width: 1800px;
+    height: 1300px;
+}
+
+#overview div {
+    width: 100%;
+    height: 100%;
+}
+
+.step {
+    position: relative;
+    width: 1000px;
+    height: 1000px;
+    padding: 40px 60px;
+    margin: 20px auto;
+    box-sizing: border-box;
+    line-height: 1.5;
+    background-color: rgb(66, 66, 27);
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .1);
+    text-shadow: 0 2px 2px rgba(0, 0, 0, .1);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40pt;
+    color: white;
+    letter-spacing: -1px;
+    border: solid 2px red;
+    opacity: 40%;
+}
+
+/* start why */
+ .why{
+  font-size: 30px;
+ }
+/* end why */
+
+/* start ring 1 5*/
+
+#ring1-5:hover{
+  width: 1300px;
+  height: 1300px;
+  font-size: 100px;
+ 
+}
+/*Start header of all the slide */
+
+.header{
+  text-align: center;
+  color: blue;
+  position: fixed;
+  top: 120px;
+  left: 350px;
+  text-shadow: 2px 3px 4px black;
+}
+
+/* end header of all the slide */
+
+
+/*Start tabel content */
+
+
+
+.tablesheet{
+  top: 270px;
+  position: absolute;
+  width: 100%;
+}
+
+
+/* end table content*/
+
+/*start All slide header*/
+
+.slide{
+  text-align: center;
+  color: blue;
+  font-family: 'Times New Roman', Times, serif;
+  text-shadow: 2px 3px 4px black;
+}
+
+/*end all slide header*/
+
+
+
+/* start slide four*/
+
+
+.paragraph{
+  inline-size: 100%;
+  overflow-wrap: break-word;
+  font-size: 35px;
+  display: inline-block;
+  position: static;
+ 
+}
+
+.day{
+  font-size: 28px;
+}
+/* end slide four*/
+
+
+
+/* start image part */
+
+img{
+/* 
+  position: absolute;
+  top: 250px;
+  right: 50px;
+  height: 400px; */
+  float: right;
+  
+}
+/* end image part */
+
+/* start unouder list*/
+
+.bulpnt{
+  font-size: 20px;
+  
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+.bulpnt li:before {
+  content: '\2192'; /* Unicode character for right arrow */
+  display: inline-block;
+  margin-right: 5px;
+  color: blue;
+  text-shadow: 2px 3px 4px red;
+}
+
+.step.active {
+    opacity: 100%;
+}
+
+.step.ring2 {
+    background-color: cyan;
+}
+
+.step.box {
+    background-color: purple;
+    opacity: 70%;
+}
+
+.step.box1 {
+    background-color: lightblue;
+}
+    </style>
+  </head>
+
+  <body class="impress-not-supported">
+    <div id="impress" data-width="2000" data-height="1500">
+      <div id="overview" class="step overview" data-rel-position="relative" data-x="-1000" data-y="-1500" data-z="100" data-scale="3" data-rotate-x="45" data-rotate-y="10">
+          <div>
+              <h2 class="slide"><code style="font-family: 'Times New Roman', Times, serif;">Root Cause Analysis (RCA)</code> </h2>
+              <p class="slide">
+                RCA how  we won the circket Match
+                <br>
+               <b>Assigned By:</b>
+                  Varad Sir</p>
+          </div>
+      </div>
+<!--start slide one -->
+      <div id="ring1-1" class="step" data-rel-reset="all" data-x="0" data-y="0" data-z="0" data-rotate-y="10">
+      
+        <p class="header"><b>CONTENTS</b></p>
+        
+
+
+        <!-- start table of content -->
+        <div class="tablesheet">
+          <table>
+            <tr>
+              <tr>
+                <th>S. No.</th>
+              
+                <th> Content</th>
+              </tr>
+              <tr>
+                <td>1.</td>
+                <td>Introduction</td>
+              </tr>
+
+              <tr>
+                <td>2.</td>
+                <td>Why did we win the Match?</td>
+              </tr>
+
+              <tr>
+                <td>3.</td>
+                <td>Why are our bowling and batting good?</td>
+              </tr>
+
+              <tr>
+                <td>4.</td>
+                <td>5 Whys</td>
+              </tr>
+
+              <tr>
+                <td>5.</td>
+                <td>Fishbone Diagram</td>
+              </tr>
+
+              <tr>
+                <td>6.</td>
+                <td>Pareto chart</td>
+              </tr>
+
+              <tr>
+                <td>7.</td>
+                <td>Conclusion</td>
+              </tr>
+              
+            </tr>
+            
+          </table>
+        </div>
+
+        <!-- end table of content -->
+
+      </div>
+<!--end slide one -->
+
+
+
+<!-- start slide two-->
+      <div id="ring1-2" class="step" data-rel-rotate-y="45" data-rel-z="-354" data-rel-x="854">
+        <p class="header">What is RCA</p> <br>
+        <p class="paragraph">
+
+          <p>RCA believes that it is better to prevent and solve the root cause of problems rather than just deal with temporary fixes and immediate symptoms.
+            This approach is more effective in the long run because it addresses the core issues and helps avoid recurring problems.
+            
+            </p>
+      </div>
+<!-- end slide two-->
+
+<!-- start slide three-->
+      <div id="ring1-3" class="step">
+        <p class="slide">Why did we win the Match?</p>
+        <div class="paragraph">
+
+          <div class="order">
+            <li><b>Teamwork and Strategy</li>
+            <li>Strong Batting</li>
+          <li>Strong Bowling Performance</li></b>
+          </div>
+        
+        </div>
+      </div>
+<!-- end slide three -->
+
+
+<!-- start slide four-->
+      <div id="ring1-4" class="step">
+        <p class="slide">Why are our batting and bowling good?</p>
+        <div class="paragraph">
+          <div class="order">
+            <ul>
+              <li>
+                Skill and Technique
+              </li>
+              <li>Depth in Talent</li>
+              <li>Strategy and Planning</li>
+              <li>Team Cohesion and Communication</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+<!-- end slide four-->
+
+
+
+<!--start slide five-->
+      <div id="ring1-5" class="step">
+        <p class="slide">5 Whys</p>
+        <div class="paragraph" >
+          <div class="why">
+            <p>The method is remarkably simple: when a problem occurs, you drill down to its root cause by asking "Why?" five times. Then, when a counter-measure becomes apparent, you follow it through to prevent the issue from recurring.</p>
+          <div class="order">
+            <ul>
+            
+              <li>Why did the team maintain a lead throughout the game?</li>
+              <li>Why did the team score more goals/points than the opposing team?</li>
+              <li>Why was the team able to capitalise on scoring opportunities?</li>
+              <li>Why is our bowling so good?</li>
+          </ul>
+        </div>
+        </div>
+          </div>
+          
+      </div>
+
+<!-- end slide five -->
+
+<!-- start slide six-->
+
+      <div id="ring1-6" class="step">
+        <p class="slide">Fishbone Diagram</p>
+
+        <div class="paragraph">
+          A fishbone diagram is a visual way to look at cause and effect. It is a more structured approach than some other tools available for brainstorming the causes of a problem (e.g., the Five Whys tool). 
+          <br><img src="../image/fishbone diagram.png" alt="" width="600px">
+
+        
+        </div>
+      </div>
+<!-- end slide six -->
+
+<!-- start slide seven-->
+      <div id="ring1-7" class="step">
+        <p class="slide">Pareto Chart</p>
+        <div class="paragraph" style="font-size: 33px;">
+          
+          Pareto analysis identifies the problem areas or tasks that will have the biggest payoff. <br><img src="../image/Pareto chart.png" alt="" width="600px">
+        </div>
+      </div>
+<!-- end sldie seven-->
+
+<!-- start sldie eight -->
+      <div id="ring1-8" class="step">
+        <p class="slide">Conclusion</p>
+        <div class="paragraph">
+          <p>
+            Firstly, effective teamwork and strategic decision-making played a crucial role. The players worked together effectively, making tactical changes to the batting and bowling orders and setting up fielding positions strategically. <br>
+            
+            Overall, the RCA analysis provided valuable insights into the factors that contributed to the team's victory. Understanding these root causes can help the team replicate success in future matches and continue to improve their performance.
+          </p>
+          <p style="font-family: 'Fredericka the Great', cursive ; font-size: 60px; text-align: center; color: green; text-shadow: 2px 3px 4px black;">Thank You</p>
+        </div>
+      </div>
+<!-- end slide eight-->
+
+
+
+
+
+<!--
+      <div id="ring2-1" class="step ring2" data-rel-reset="all" data-x="-500" data-y="0" data-z="-1514" data-rotate-x="90" data-rotate-y="270" data-rotate-z="0">
+        <p>Slide one</p>
+        <p>This is another ring of slides.</p>
+        <p>Except for the this slide, its code is just cloned from the yellow ring.</p>
+        <p>Just change the position of first slide, all the following slides are position relatived to it.</p>
+      </div>
+
+      <div id="ring2-2" class="step ring2" data-rel-rotate-y="45" data-rel-z="-354" data-rel-x="854" data-rel-y="0">
+        <p>Slide two</p>
+      </div>
+
+      <div id="ring2-3" class="step ring2">
+        <p>Slide three</p>
+      </div>
+
+      <div id="ring2-4" class="step ring2">
+        <p>Slide four</p>
+      </div>
+
+      <div id="ring2-5" class="step ring2">
+        <p>Slide five</p>
+      </div>
+
+      <div id="ring2-6" class="step ring2">
+        <p>Slide six</p>
+      </div>
+
+      <div id="ring2-7" class="step ring2">
+        <p>Slide seven</p>
+      </div>
+
+      <div id="ring2-8" class="step ring2">
+        <p>Slide eight</p>
+      </div>
+    -->
+
+    </div>
+
+    <div id="impress-toolbar"></div>
+    <div id="impress-help"></div>
+
+    <script type="text/javascript" src="../../js/impress.js"></script>
+    <script>impress().init();</script>
+  </body>
+<html>
